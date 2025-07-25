@@ -12,10 +12,10 @@
 .display-flex{
     display: flex;
 }
-body{
+/* body{
     max-width: 1140px;
     margin: 0 auto;
-}
+} */
 .primary-color{
     color: #E95A08;
 }
@@ -30,7 +30,10 @@ body{
 }
 
 /* header style */
-
+.header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 /* navbar style */
 
 .navbar{
@@ -80,10 +83,13 @@ body{
 }
 
 /* card style */
-
+.card-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .cards{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 50px;
 }
@@ -99,6 +105,7 @@ body{
 .price{
     font-size: 22px;
     font-weight: 700;
+    margin-top: 0;
     margin-bottom: 30;
 }
 .btn-primary{
@@ -110,6 +117,10 @@ body{
 }
 
 /* flower related style */
+.flowers-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .flower-section{
     gap: 60px;
     margin-top: 210px;
@@ -118,16 +129,25 @@ body{
 .flower-detail h3,li{
     margin-bottom: 20px;
 }
+/* latest-deals */
+.latest-deals{
+     max-width: 888px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
 /* join style */
+
 .join{
+    max-width:100%;
+    height: 533px;
     margin-top: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-image: url(/images/news-letter-bg.png);
-    width: 1140px;
-    height: 533px;
     background-color: rgba(7, 51, 79, 0.4);
 }
 .join-title{
@@ -143,20 +163,30 @@ body{
 
 
 /* footer style */
+.footer-section{
+    max-width: 1140px;
+    margin: 50px auto;
+    gap: 80px;
+}
 .footer-logo{
     max-width: 359px;
-}
-.footer-section{
-    gap: 100px;
-    margin-top: 50px;
 }
 .footer-section li{
     list-style: none;
     color: rgba(107, 108, 128, 1);
 }
+.social-media .twitter{
+    height: 30px;
+    width: 30px;
+}
+.social-media img{
+    padding-left: 15px;
+}
+
+/* responsive */
 
 
-/* responsibe */
+
 @media screen and (max-width:576px){
     .nav-items .nav-link1,.nav-link2{
         visibility: hidden;
@@ -169,12 +199,43 @@ body{
     font-size: 3rem;
     }
     .cards{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .card{
+        max-width: 171px;
+        margin-left: 10px;
+    }
+    .card img{
+        max-width: 171px;
+    }
+    .btn-primary{
+    padding: 16px 40px;
     }
     .flower-section{
         flex-direction: column;
     }
-    .join{
-        width: ;
+    .flowers-section img{
+        max-width: 361px;
+    }
+    .join-title{
+    font-size: 20px;
+    }
+    .join-input{
+    padding: 16px 50px 16px 20px;
+    border: none;
+    }
+    .join button{
+        padding: 16px 12px;
+    }
+
+
+
+    .footer-section{
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-section ul{
+        margin: 0;
+        padding-left: 20px;
     }
 }
