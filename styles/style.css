@@ -32,6 +32,7 @@ body{
 /* header style */
 
 /* navbar style */
+
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -106,4 +107,34 @@ body{
     background-color: #E95A08;
     padding: 19px 89px;
     border: none;
+}
+
+/* flower related style */
+.flower-section{
+    gap: 60px;
+    margin-top: 210px;
+    align-items: center;
+}
+.flower-detail h3,li{
+    margin-bottom: 20px;
+}
+
+
+
+/* responsibe */
+@media screen and (max-width:576px){
+    .nav-items .nav-link1,.nav-link2{
+        visibility: hidden;
+        position: absolute;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-title{
+    font-size: 3rem;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
 }
