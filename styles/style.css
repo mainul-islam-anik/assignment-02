@@ -117,6 +117,13 @@
 }
 
 /* flower related style */
+.badge img{
+    position: absolute;
+    right: 580px;
+    top: 2000px;
+    height: 286px;
+    width: 286px;
+}
 .flowers-section{
     max-width: 1140px;
     margin: 0 auto;
@@ -130,11 +137,30 @@
     margin-bottom: 20px;
 }
 /* latest-deals */
+.latest-deals-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .latest-deals{
-     max-width: 888px;
+    max-width: 888px;
     margin: 0 auto;
     text-align: center;
     margin-top: 120px;
+}
+.card-layout{
+    margin-top: 120px;
+}
+.left-card > img {
+    height: 200px;
+    max-width: 367px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+.right-card > img{
+    height: 423px;
+    width: 753px;
+    border-radius: 22px;
+    margin-left: 28px;
 }
 
 /* join style */
@@ -214,9 +240,26 @@
     .flower-section{
         flex-direction: column;
     }
+    .badge img{
+        display: none;
+    }
     .flowers-section img{
         max-width: 361px;
     }
+    .left-card > img{
+        margin-left: 15px;
+    }
+    .right-card > img {
+    height: 200px;
+    max-width: 367px;
+    border-radius: 14px;
+    margin-left: 15px;
+    }
+    .card-layout{
+        flex-direction: column;
+    }
+
+
     .join-title{
     font-size: 20px;
     }
