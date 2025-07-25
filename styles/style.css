@@ -173,7 +173,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url(/images/news-letter-bg.png);
+    background-image: url("/images/news-letter-bg.png");
     background-color: rgba(7, 51, 79, 0.4);
 
 }
